@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import logo from '../assets/logoTMH-01.png';
 
-function NavBar() {
+function NavBar({onClick}) {
   return (
     <div className='navbar'>
       <Link to='/'>
@@ -25,7 +25,7 @@ function NavBar() {
         
         
       </ul>
-      <button className='navbar-tribar'>≡</button>
+      <button className='navbar-tribar' onClick={onClick}>≡</button>
     </div>
   );
 }

@@ -2,13 +2,25 @@ import NavBar from "../components/NavBar";
 import banner from '../assets/avatar.jpg';
 import logo from '../assets/logoTMH-01.png';
 import Profile from "../components/Profile";
+import { useState } from "react";
+import Sidebar from "../components/Sidebar";
 
 
 function AboutUs() {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const openSidebar = () => {
+    setIsSidebarOpen(true);
+  };
+
+  const closeSidebar = () => {
+    setIsSidebarOpen(false);
+  };
 
     return (
         <div className="about">
-          <NavBar />
+          <NavBar onClick={openSidebar}/>
+          <Sidebar isOpen={isSidebarOpen} closeSidebar={closeSidebar} />
           <div className='about-banner'>
             <div className='about-slogan'>
               "KHÔNG CÓ LỜI GIẢI TỐT NHẤT, 

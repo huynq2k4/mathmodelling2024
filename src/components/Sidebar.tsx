@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
 
-function Sidebar() {
+function Sidebar({ isOpen, closeSidebar }) {
     return (
-        <div className="sidebar">
+        <>
+        <div className={`sidebar ${isOpen ? 'active' : ''}`}>
             <ul className='sidebar-link'>
         <Link to='/'>
           <li className='sidebar-item'>HOME</li>
@@ -14,12 +15,15 @@ function Sidebar() {
           <li className='sidebar-item'>BLOG</li>
         </Link>
         <Link to='/about'>
-          <li className='sidebar-item sidebar-end'>ABOUT US</li>
+          <li className='sidebar-item'>ABOUT US</li>
         </Link>
         
         
       </ul>
+      
         </div>
+        {isOpen && <div className="overlay" onClick={closeSidebar}></div>}
+        </>
     )
 }
 

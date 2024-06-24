@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import HomePage from './pages/HomePage.tsx'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import AboutUs from './pages/AboutUs.tsx'
 import './main.css'
 import Blog from './pages/Blog.tsx'
@@ -15,6 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path='/about' element={<AboutUs />}/>
         <Route path='/blog' element={<Blog />}/>
         <Route path='/events' element={<Event />}/>
+        <Route path='*' element={<Navigate to='/' />}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

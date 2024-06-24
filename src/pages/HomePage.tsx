@@ -2,11 +2,23 @@ import NavBar from "../components/NavBar";
 import logo from "../assets/logoTMH-01.png";
 import default_img from "../assets/default.jpg";
 import banner from "../assets/avatar.jpg";
+import { useState } from "react";
+import Sidebar from "../components/Sidebar";
 
 function HomePage() {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const openSidebar = () => {
+    setIsSidebarOpen(true);
+  };
+
+  const closeSidebar = () => {
+    setIsSidebarOpen(false);
+  };
     return (
         <div className="content">
-          <NavBar />
+          <NavBar onClick={openSidebar}/>
+          <Sidebar isOpen={isSidebarOpen} closeSidebar={closeSidebar} />
           <div className='homepage-avatar'>
             <div className='homepage-competition'>
               
