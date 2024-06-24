@@ -1,5 +1,4 @@
 import NavBar from "../components/NavBar";
-// import './AboutUs.css'
 
 function Blog() {
     return (

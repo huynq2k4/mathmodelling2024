@@ -1,5 +1,5 @@
 import NavBar from "../components/NavBar";
-// import './AboutUs.css'
+import banner from '../assets/avatar.jpg';
 
 function AboutUs() {
     return (
@@ -25,7 +25,7 @@ function AboutUs() {
                 <p style={{fontWeight: 'bold'}}>GIÁ TRỊ CỐT LÕI</p>
                 <p style={{textAlign: 'justify'}}>Innovative • Determined • Gracious</p>
             </div>
-            <img src='../src/images/avatar.jpg' alt='img' className="about-intro-img" />
+            <img src={banner} alt='img' className="about-intro-img" />
           </div>
           <div className="about-achievement">
             <div className="about-achievement-left"></div>

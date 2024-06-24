@@ -1,4 +1,7 @@
 import NavBar from "../components/NavBar";
+import logo from "../assets/logoTMH-01.png";
+import default_img from "../assets/default.jpg";
+import banner from "../assets/avatar.jpg";
 
 function HomePage() {
     return (
@@ -22,15 +25,15 @@ function HomePage() {
           <div className="homepage-unique">
           
               <div className="homepage-usp">
-                <img src='./src/images/default.jpg' alt='TMH' className="homepage-usp-img"></img>
+                <img src={default_img} alt='TMH' className="homepage-usp-img"></img>
                 <p className="homepage-usp-content">USP1</p>
               </div>
               <div className="homepage-usp">
-                <img src='./src/images/default.jpg' alt='TMH' className="homepage-usp-img"></img>
+                <img src={default_img} alt='TMH' className="homepage-usp-img"></img>
                 <p className="homepage-usp-content">USP2</p>
               </div>
               <div className="homepage-usp">
-                <img src='./src/images/default.jpg' alt='TMH' className="homepage-usp-img"></img>
+                <img src={default_img} alt='TMH' className="homepage-usp-img"></img>
                 <p className="homepage-usp-content">USP3</p>
               </div>
           </div>
@@ -39,52 +42,52 @@ function HomePage() {
           <div className="homepage-news">
           
               <div className="homepage-news-component">
-                <img src='./src/images/default.jpg' alt='TMH' className="homepage-news-img"></img>
+                <img src={default_img} alt='TMH' className="homepage-news-img"></img>
                 <p className="homepage-news-title">News title 1</p>
               </div>
               <div className="homepage-news-component">
-                <img src='./src/images/default.jpg' alt='TMH' className="homepage-news-img"></img>
+                <img src={default_img} alt='TMH' className="homepage-news-img"></img>
                 <p className="homepage-news-title">News title 2</p>
               </div>
               <div className="homepage-news-component">
-                <img src='./src/images/default.jpg' alt='TMH' className="homepage-news-img"></img>
+                <img src={default_img} alt='TMH' className="homepage-news-img"></img>
                 <p className="homepage-news-title">News title 3</p>
               </div>
           </div>
           <div className="white-background">
           <p className="white-background homepage-title homepage-network">OUR NETWORKS</p>
-          <img src='../src/images/avatar.jpg' alt='TMH' className="homepage-network-flag"></img>
+          <img src={banner} alt='TMH' className="homepage-network-flag"></img>
           <div className="white-background homepage-network-img">
-            <img src='../src/images/logoTMH-01.png' alt='TMH'></img>
-            <img src='../src/images/logoTMH-01.png' alt='TMH'></img>
-            <img src='../src/images/logoTMH-01.png' alt='TMH'></img>
-            <img src='../src/images/logoTMH-01.png' alt='TMH'></img>
-            <img src='../src/images/logoTMH-01.png' alt='TMH'></img>
-            <img src='../src/images/logoTMH-01.png' alt='TMH'></img>
-            <img src='../src/images/logoTMH-01.png' alt='TMH'></img>
-            <img src='../src/images/logoTMH-01.png' alt='TMH'></img>
-            <img src='../src/images/logoTMH-01.png' alt='TMH'></img>
-            <img src='../src/images/logoTMH-01.png' alt='TMH'></img>
-            <img src='../src/images/logoTMH-01.png' alt='TMH'></img>
-            <img src='../src/images/logoTMH-01.png' alt='TMH'></img>
-            <img src='../src/images/logoTMH-01.png' alt='TMH'></img>
-            <img src='../src/images/logoTMH-01.png' alt='TMH'></img>
-            <img src='../src/images/logoTMH-01.png' alt='TMH'></img>
-            <img src='../src/images/logoTMH-01.png' alt='TMH'></img>
-            <img src='../src/images/logoTMH-01.png' alt='TMH'></img>
-            <img src='../src/images/logoTMH-01.png' alt='TMH'></img>
-            <img src='../src/images/logoTMH-01.png' alt='TMH'></img>
-            <img src='../src/images/logoTMH-01.png' alt='TMH'></img>
-            <img src='../src/images/logoTMH-01.png' alt='TMH'></img>
-            <img src='../src/images/logoTMH-01.png' alt='TMH'></img>
-            <img src='../src/images/logoTMH-01.png' alt='TMH'></img>
-            <img src='../src/images/logoTMH-01.png' alt='TMH'></img>
-            <img src='../src/images/logoTMH-01.png' alt='TMH'></img>
-            <img src='../src/images/logoTMH-01.png' alt='TMH'></img>
-            <img src='../src/images/logoTMH-01.png' alt='TMH'></img>
-            <img src='../src/images/logoTMH-01.png' alt='TMH'></img>
-            <img src='../src/images/logoTMH-01.png' alt='TMH'></img>
-            <img src='../src/images/logoTMH-01.png' alt='TMH'></img>
+            <img src={logo} alt='TMH'></img>
+            <img src={logo} alt='TMH'></img>
+            <img src={logo} alt='TMH'></img>
+            <img src={logo} alt='TMH'></img>
+            <img src={logo} alt='TMH'></img>
+            <img src={logo} alt='TMH'></img>
+            <img src={logo} alt='TMH'></img>
+            <img src={logo} alt='TMH'></img>
+            <img src={logo} alt='TMH'></img>
+            <img src={logo} alt='TMH'></img>
+            <img src={logo} alt='TMH'></img>
+            <img src={logo} alt='TMH'></img>
+            <img src={logo} alt='TMH'></img>
+            <img src={logo} alt='TMH'></img>
+            <img src={logo} alt='TMH'></img>
+            <img src={logo} alt='TMH'></img>
+            <img src={logo} alt='TMH'></img>
+            <img src={logo} alt='TMH'></img>
+            <img src={logo} alt='TMH'></img>
+            <img src={logo} alt='TMH'></img>
+            <img src={logo} alt='TMH'></img>
+            <img src={logo} alt='TMH'></img>
+            <img src={logo} alt='TMH'></img>
+            <img src={logo} alt='TMH'></img>
+            <img src={logo} alt='TMH'></img>
+            <img src={logo} alt='TMH'></img>
+            <img src={logo} alt='TMH'></img>
+            <img src={logo} alt='TMH'></img>
+            <img src={logo} alt='TMH'></img>
+            <img src={logo} alt='TMH'></img>
           </div>
           <p className="homepage-connect">CONNECT US VIA</p>
           <div className="copyright">
