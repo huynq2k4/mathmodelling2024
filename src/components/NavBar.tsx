@@ -23,7 +23,9 @@ function NavBar() {
           <li className='navbar-item navbar-end'>ABOUT US</li>
         </Link>
         
+        
       </ul>
+      <button className='navbar-tribar'>≡</button>
     </div>
   );
 }

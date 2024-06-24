@@ -18,10 +18,10 @@ function HomePage() {
             
           </div>
           <div className="homepage-introduction">
-            <p className="homepage-title">HANOI MATHEMATICAL MODELING COMMUNITY</p>
+            <p className="title">HANOI MATHEMATICAL MODELING COMMUNITY</p>
             <p className="homepage-introduction-content">Something about TMH</p>
           </div>
-          <p className="homepage-title">WHAT MAKES US UNIQUE</p>
+          <p className="title">WHAT MAKES US UNIQUE</p>
           <div className="homepage-unique">
           
               <div className="homepage-usp">
@@ -38,7 +38,7 @@ function HomePage() {
               </div>
           </div>
 
-          <p className="homepage-title">FEATURE NEWS</p>
+          <p className="title">FEATURE NEWS</p>
           <div className="homepage-news">
           
               <div className="homepage-news-component">
@@ -55,7 +55,7 @@ function HomePage() {
               </div>
           </div>
           <div className="white-background">
-          <p className="white-background homepage-title homepage-network">OUR NETWORKS</p>
+          <p className="white-background title homepage-network">OUR NETWORKS</p>
           <img src={banner} alt='TMH' className="homepage-network-flag"></img>
           <div className="white-background homepage-network-img">
             <img src={logo} alt='TMH'></img>
@@ -89,7 +89,7 @@ function HomePage() {
             <img src={logo} alt='TMH'></img>
             <img src={logo} alt='TMH'></img>
           </div>
-          <p className="homepage-connect">CONNECT US VIA</p>
+          <p className="connect">CONNECT US VIA</p>
           <div className="copyright">
             <p>COPYRIGHT (C) 2021 TOANMOHINHVN.COM ALL RIGHT RESERVED</p>
           </div>
