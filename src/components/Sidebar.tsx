@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-function Sidebar({ isOpen, closeSidebar }) {
+function Sidebar({ isOpen, closeSidebar }: {isOpen: boolean, closeSidebar: any}) {
     return (
         <>
         <div className={`sidebar ${isOpen ? 'active' : ''}`}>

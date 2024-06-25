@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
 import logo from '../assets/logoTMH-01.png';
 
-function NavBar({onClick}) {
+
+
+function NavBar({onClick}: {onClick: any}) {
   return (
     <div className='navbar'>
       <Link to='/'>
