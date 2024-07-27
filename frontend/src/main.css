@@ -96,10 +96,6 @@ body {
   z-index: 999;
 }
 
-/*@media only screen and (min-width: 1024px) {
-  
-} */
-
 .navbar {
     width: 100%;
     display: flex;
@@ -213,13 +209,14 @@ body {
 .news-card-article > p {
   font-size: 1.6vw;
   text-align: justify;
+  margin: 1vw 0;
 }
 
 .news-card-more {
   display: inline-block;
   background-color: #001f8d;
   color: #ffffff;
-  padding: 5px 10px;
+  padding: 1vw 2vw;
   font-size: 1.5vw;
   font-family: 'Montserrat';
   border-radius: 10px;
