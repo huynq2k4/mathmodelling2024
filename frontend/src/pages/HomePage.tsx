@@ -1,5 +1,4 @@
 import NavBar from "../components/NavBar";
-import logo from "../assets/logoTMH-01.png";
 import default_img from "../assets/default.jpg";
 import banner from "../assets/avatar.jpg";
 import usp_foundation from "../assets/usp-icon-foundation.svg"

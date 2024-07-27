@@ -1,6 +1,5 @@
 import NavBar from "../components/NavBar";
 import banner from '../assets/avatar.jpg';
-import logo from '../assets/logoTMH-01.png';
 import Profile from "../components/Profile";
 import { useState } from "react";
 import Sidebar from "../components/Sidebar";
