@@ -4,6 +4,24 @@ import logo from '../assets/logoTMH-01.png';
 import Profile from "../components/Profile";
 import { useState } from "react";
 import Sidebar from "../components/Sidebar";
+import partner_1office from "../assets/partner_1office.png"
+import partner_3c from "../assets/partner_3c.jpg"
+import partner_advertising_vietnam from "../assets/partner_advertising_vietnam.png"
+import partner_american_study from "../assets/partner_american_study.png"
+import partner_edu_event_sponsor from "../assets/partner_edu_event_sponsor.png"
+import partner_everjoy from "../assets/partner_everjoy.png"
+import partner_hust from "../assets/partner_hust.png"
+import partner_lucky_uniform from "../assets/partner_lucky_uniform.png"
+import partner_mina from "../assets/partner_mina.png"
+import partner_ongbut from "../assets/partner_ongbut.png"
+import partner_sami from "../assets/partner_sami.png"
+import partner_stem from "../assets/partner_stem.png"
+import partner_summit from "../assets/partner_summit.svg"
+import partner_vietan from "../assets/partner_vietan.png"
+import partner_vinif from "../assets/partner_vinif.png"
+import partner_vinuni from "../assets/partner_vinuni.webp"
+import partner_ybox from "../assets/partner_ybox.png"
+import ConnectUs from "../components/ConnectUs";
 
 
 function AboutUs() {
@@ -78,52 +96,49 @@ function AboutUs() {
           </div>
           <p className="title">ORGANIZATIONAL STRUCTURE</p>
           <p className="about-structure-title">BAN ĐIỀU HÀNH</p>
-          <p className="about-structure-content">Chức năng/Nhiệm vụ</p>
-          <div style={{display: 'flex', textAlign: 'center'}}>
+
+          <div style={{display: 'grid', textAlign: 'center', gridTemplateColumns: '1fr 1fr 1fr', padding: '0 1vw'}}>
             <div style={{flex: '1'}}>
               <p className="about-structure-title">BAN CHUYÊN MÔN</p>
-              <p className="about-structure-content">Chức năng/Nhiệm vụ</p>
+              <p className="about-structure-content">Mảng Giáo dục</p>
+              <p className="about-structure-content">Mảng Nghiên cứu</p>
             </div>
             <div style={{flex: '1'}}>
               <p className="about-structure-title">BAN TRUYỀN THÔNG</p>
-              <p className="about-structure-content">Chức năng/Nhiệm vụ</p>
-            </div>
-            <div style={{flex: '1'}}>
-              <p className="about-structure-title">BAN ĐỐI NGOẠI</p>
-              <p className="about-structure-content">Chức năng/Nhiệm vụ</p>
+              <p className="about-structure-content">Mảng Nội dung</p>
+              <p className="about-structure-content">Mảng Kỹ thuật (Media)</p>
             </div>
             <div style={{flex: '1'}}>
               <p className="about-structure-title">BAN SỰ KIỆN</p>
-              <p className="about-structure-content">Chức năng/Nhiệm vụ</p>
+              <p className="about-structure-content">Mảng Hậu cần</p>
+              <p className="about-structure-content">Mảng Đối ngoại</p>
             </div>
             
           </div>
           <div className="white-background">
             <p className="title">OUR PARTNERS</p>
             <div className="about-partner">
-              <img src={logo} alt='TMH'></img>
-              <img src={logo} alt='TMH'></img>
-              <img src={logo} alt='TMH'></img>
-              <img src={logo} alt='TMH'></img>
-              <img src={logo} alt='TMH'></img>
-              <img src={logo} alt='TMH'></img>
-              <img src={logo} alt='TMH'></img>
-              <img src={logo} alt='TMH'></img>
-              <img src={logo} alt='TMH'></img>
-              <img src={logo} alt='TMH'></img>
-              <img src={logo} alt='TMH'></img>
-              <img src={logo} alt='TMH'></img>
-              <img src={logo} alt='TMH'></img>
-              <img src={logo} alt='TMH'></img>
-              <img src={logo} alt='TMH'></img>
-              <img src={logo} alt='TMH'></img>
-              <img src={logo} alt='TMH'></img>
+              <img src={partner_stem} alt='TMH'></img>
+              <img src={partner_hust} alt='TMH'></img>
+              <img src={partner_sami} alt='TMH'></img>
+              <img src={partner_vinuni} alt='TMH'></img>
+              <img src={partner_ongbut} alt='TMH'></img>
+              <img src={partner_1office} alt='TMH'></img>
+              <img src={partner_vinif} alt='TMH'></img>
+              <img src={partner_3c} alt='TMH'></img>
+              <img src={partner_vietan} alt='TMH'></img>
+              <img src={partner_everjoy} alt='TMH'></img>
+              <img src={partner_edu_event_sponsor} alt='TMH'></img>
+              <img src={partner_lucky_uniform} alt='TMH'></img>
+              <img src={partner_mina} alt='TMH'></img>
+              <img src={partner_advertising_vietnam} alt='TMH'></img>
+              <img src={partner_american_study} alt='TMH'></img>
+              <img src={partner_summit} alt='TMH'></img>
+              <img src={partner_ybox} alt='TMH'></img>
             </div>
-            <p className="connect">CONNECT US VIA</p>
-            <div className="copyright">
-              <p>COPYRIGHT (C) 2021 TOANMOHINHVN.COM ALL RIGHT RESERVED</p>
-            </div>
+            <ConnectUs />
           </div>
+          
           
       </div>
     )

@@ -144,41 +144,7 @@ body {
   display: none;
 }
 
-@media only screen and (max-width: 739px) {
-  .navbar-link, .navbar-item{
-    display: none;
-  }
 
-  .navbar-name {
-    font-size: 1em;
-  }
-  .navbar-logo {
-    margin: 0 auto;
-    width: 10vmin;
-    height: 10vmin;
-    padding: 5px;
-  }
-
-  .navbar-tribar {
-    display: inline;
-    font-size: 8vmin;
-    width: 10vmin;
-    height: 10vmin;
-    text-align: center;
-    margin-right: 5px;
-    color: white;
-    background-color: #001f8d;
-    border: none;
-    cursor: pointer;
-  }
-
-}
-
-@media only screen and (min-width: 740px) and (max-width: 1023px) {
-  .navbar-name {
-    display: none;
-  }
-}
 
 .content {
     display: block;
@@ -190,14 +156,14 @@ body {
   text-align: center;
   font-family: 'SVN-Monument';
   font-weight: bold;
-  font-size: 1.6em;
+  font-size: 3vw;
   padding-top: 10px;
 }
 
 .connect {
   text-align: center;
   font-family: 'Montserrat';
-  font-size: 1.2em;
+  font-size: 1.5vw;
 }
 
 /* Home */
@@ -258,7 +224,7 @@ body {
 
 .homepage-introduction {
   text-align: center;
-  margin: 0 5vw;
+  margin: 0 15vw 0 10vw;
 }
 
 .homepage-introduction-title {
@@ -269,27 +235,52 @@ body {
 }
 
 .homepage-introduction-content {
-  font-size: 1rem;
+  font-size: 2vw;
+  text-align: left;
+  font-weight: bold;
 }
 
+.homepage-unique {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 10vw;
+  grid-column-gap: 3vw;
+  grid-row-gap: 3vw;
+}
 
-
-.homepage-unique, .homepage-news {
+.homepage-news {
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
-.homepage-usp, .homepage-news-component {
+.homepage-usp {
+  display: flex;
+  align-items: center;
+}
+
+.homepage-usp > img {
+  width: 2.5rem;
+  margin-right: 1.3em;
+}
+
+.homepage-usp-content {
+  text-align: left;
+  font-weight: bold;
+
+}
+
+.homepage-news-component {
   padding: 4vw;
 }
 
-.homepage-usp-img, .homepage-news-img {
+.homepage-news-img {
   width: 20vw;
-  height: 30vw;
+  height: 25vw;
+  border-radius: 1.5vw;
 }
 
-.homepage-usp-content, .homepage-news-title {
+.homepage-news-title {
   text-align: center;
 }
 
@@ -299,7 +290,6 @@ body {
 
 .homepage-network, .homepage-network-flag {
   padding: 20px 0;
-  font-size: 5vw;
 }
 
 .homepage-network-flag {
@@ -316,9 +306,9 @@ body {
 }
 
 .homepage-network-img > img, .about-partner > img {
-  height: 10vw;
+  height: 4vw;
   display: inline-block;
-
+  padding: 1vw;
 }
 
 
@@ -331,156 +321,229 @@ body {
     background-image: url(assets/avatar.jpg);
     background-size: cover;
     background-position: bottom;
-  }
-  
-  
-
-  
-  .about-slogan {
-    position: absolute;
-    top: 68%;
-    left: 35%;
-    width: 65%;
-    height: 30%;
-    color: white;
-    font-size: 3vw;
-    text-align: center;
-    font-family: 'SVN-Monument';
-  }
-  
-  .about-intro {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .about-intro-script, .about-intro-img {
-    flex: 1;
-    padding: 40px;
-    width: 40%;
-    border-radius: 5em;
-  }
-  
-  .about-intro-script-1 {
-    font-family: 'SVN-Monument';
-    font-size: 3vw;
-  }
-
-  .about-intro-core-value {
-    text-align: justify;
-  }
+}
 
 
-  .about-achievement {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
 
-  .about-achievement-left, .about-achievement-right {
-    flex: 1;
+
+.about-slogan {
+  position: absolute;
+  top: 68%;
+  left: 35%;
+  width: 65%;
+  height: 30%;
+  color: white;
+  font-size: 3vw;
+  text-align: center;
+  font-family: 'SVN-Monument';
+}
+
+.about-intro {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-intro-script, .about-intro-img {
+  flex: 1;
+  padding: 40px;
+  width: 40%;
+  border-radius: 5em;
+}
+
+.about-intro-script-1 {
+  font-family: 'SVN-Monument';
+  font-size: 3vw;
+}
+
+.about-intro-core-value {
+  text-align: justify;
+}
+
+
+.about-achievement {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.about-achievement-left, .about-achievement-right {
+  flex: 1;
+  display: block;
+  width: 45%;
+  margin: 1em;
+  padding: 1em;
+}
+
+.about-achievement-left {
+  background-color: white;
+  color: #001f8d;
+  font-size: 2em;
+  width: 45%;
+  font-weight: bold;
+  border-radius: 1em;
+}
+
+.about-achievement-left > p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5em 0;
+}
+@media only screen and (max-width: 739px) {
+  .title {
+    font-size: 1em
+  }
+  .about-intro, .about-achievement {
     display: block;
-    width: 45%;
-    margin: 1em;
-    padding: 1em;
+    width: 90%;
+    text-align: center;
+  }
+
+  .about-intro {
+    margin: 10px auto;
+  }
+  .about-intro-script, .about-intro-img {
+    padding: 0;
+    width: 100%;
+    margin: auto;
+  }
+  .about-intro-script-1 {
+    font-size: 1.2em;
+    padding: 5vw;
   }
 
   .about-achievement-left {
-    background-color: white;
-    color: #001f8d;
-    font-size: 2em;
-    width: 45%;
-    font-weight: bold;
-    border-radius: 1em;
-  }
-
-  .about-achievement-left > p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0.5em 0;
-  }
-  @media only screen and (max-width: 739px) {
-    .about-intro, .about-achievement {
-      display: block;
-      width: 90%;
-      text-align: center;
-    }
-
-    .about-intro {
-      margin: 10px auto;
-    }
-    .about-intro-script, .about-intro-img {
-      padding: 0;
-      width: 100%;
-      margin: auto;
-    }
-    .about-intro-script-1 {
-      font-size: 1.2em;
-      padding: 5vw;
-    }
-
-    .about-achievement-left {
-      width: 100%;
-      padding: 0;
-      margin: 5vw;
-      font-size: 1em;
-    }
-
-    .about-achievement-right {
-      display: none;
-    }
-    .about-intro-core-value {
-      text-align: center;
-    }
-  
-  }
-
-  .about-achievement-title {
-    font-family: 'SVN-Monument';
-    font-size: 3vw;
-  }
-
-  .about-human-title, .about-structure-title {
-    font-weight: bold;
-    font-size: 1.2em;
-  }
-
-  .about-structure-title, .about-structure-content {
-    text-align: center;
-  }
-
-  .about-structure-content {
-    font-size: 0.9em;
-  }
-
-  .about-human {
     width: 100%;
+    padding: 0;
+    margin: 5vw;
+    font-size: 1em;
+  }
+
+  .about-achievement-right {
+    display: none;
+  }
+  .about-intro-core-value {
     text-align: center;
   }
-
-
-  .profile {
-    display: inline-block;
-    padding-left: 4vw;
-    padding-right: 4vw;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-  }
-  .profile-img {
-    width: 13em;
-    border-radius: 13em;
-  }
-  .profile-name {
-    font-weight: bold;
-    font-size: 1.2em;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-  .profile-info {
-    font-size: 0.9em;
-    margin-top: 5px;
-    margin-bottom: 10px;
+  .homepage-unique {
+    display: grid;
+    grid-template-columns: 1fr;
+  
   }
   
+}
+
+.about-achievement-title {
+  font-family: 'SVN-Monument';
+  font-size: 3vw;
+}
+
+.about-human-title {
+  font-weight: bold;
+  font-size: 1em;
+}
+.about-structure-title {
+  font-weight: bold;
+  font-size: 2vw;
+}
+
+.about-structure-title, .about-structure-content {
+  text-align: center;
+}
+
+.about-structure-content {
+  font-size: 1.75vw;
+}
+
+.about-human {
+  width: 100%;
+  text-align: center;
+}
+
+
+.profile {
+  display: inline-block;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+.profile-img {
+  width: 13em;
+  height: 13em;
+  border-radius: 13em;
+  transform: all 0.5s ease;
+  cursor: pointer;
+}
+
+/* .profile-img:hover {
+  transform: scale(2) 0.5s;
+} */
+
+.profile-name {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.profile-info {
+  font-size: 0.9em;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.event-banner {
+  width: 100%;
+}
+
+.event-content > p {
+  font-size: 1.5vw;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 739px) {
+  .navbar-link, .navbar-item{
+    display: none;
+  }
+
+  .navbar-name {
+    font-size: 1em;
+  }
+  .navbar-logo {
+    margin: 0 auto;
+    width: 10vmin;
+    height: 10vmin;
+    padding: 5px;
+  }
+
+  .navbar-tribar {
+    display: inline;
+    font-size: 8vmin;
+    width: 10vmin;
+    height: 10vmin;
+    text-align: center;
+    margin-right: 5px;
+    color: white;
+    background-color: #001f8d;
+    border: none;
+    cursor: pointer;
+  }
+  .homepage-usp-content {
+    font-size: 2.2vw;
+  }
+  .homepage-introduction-content {
+    font-size: 2vw;
+  }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .navbar-name {
+    display: none;
+  }
+  .homepage-unique {
+    padding: 0 5vw;
+  }
+}
