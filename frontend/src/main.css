@@ -166,6 +166,76 @@ body {
   font-size: 1.5vw;
 }
 
+.news-card {
+  width: 100%;
+  background-color: white;
+  display: block;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.news-card-image {
+  width: 100%;
+  aspect-ratio: 1/1;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.news-card-image > img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+
+.news-card-image > img:hover {
+  transform: scale(1.1)
+}
+
+.news-card-article {
+  padding: 1.5vw;
+  color: #001f8d;
+}
+
+.news-card-article > h4 {
+  margin: 0;
+  font-size: 1.8vw;
+  max-height: 250px;
+  text-align: justify;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.news-card-article > h4:hover {
+  color: #093efc;
+}
+
+.news-card-article > p {
+  font-size: 1.6vw;
+  text-align: justify;
+}
+
+.news-card-more {
+  display: inline-block;
+  background-color: #001f8d;
+  color: #ffffff;
+  padding: 5px 10px;
+  font-size: 1.5vw;
+  font-family: 'Montserrat';
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: none;
+}
+
+.news-card-more:hover {
+  background-color: #093efc;
+  transition: background-color 0.3s;
+}
+
+
+
 /* Home */
 
 .homepage-avatar {
@@ -230,7 +300,7 @@ body {
 .homepage-introduction-title {
   font-family: 'SVN-Monument';
   font-weight: bold;
-  font-size: 1.6em;
+  font-size: 6em;
   padding: 5vw;
 }
 
@@ -249,9 +319,10 @@ body {
 }
 
 .homepage-news {
-  display: flex;
-  justify-content: center;
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4vw;
+  margin: 0 6vw;
 }
 
 .homepage-usp {
@@ -393,7 +464,7 @@ body {
 }
 @media only screen and (max-width: 739px) {
   .title {
-    font-size: 1em
+    font-size: 0.9em
   }
   .about-intro, .about-achievement {
     display: block;
@@ -475,13 +546,20 @@ body {
   width: 13em;
   height: 13em;
   border-radius: 13em;
-  transform: all 0.5s ease;
+  overflow: hidden;
+}
+
+.profile-img > div {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+  background-size: cover;
   cursor: pointer;
 }
 
-/* .profile-img:hover {
-  transform: scale(2) 0.5s;
-} */
+.profile-img > div:hover {
+  transform: scale(1.2);
+}
 
 .profile-name {
   font-weight: bold;
@@ -536,6 +614,21 @@ body {
   }
   .homepage-introduction-content {
     font-size: 2vw;
+  }
+  .homepage-news {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .news-card {
+    display: grid;
+    grid-template-columns: 22vw 1fr;
+    overflow: hidden;
+    padding: 0;
+    max-height: 22vw;
+  }
+  .news-card-image {
+    height: 22vw;
+    width: 100%;
   }
 }
 
